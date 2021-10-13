@@ -1,8 +1,7 @@
-
+#ignore the connection to Database file
 connect/
-
+#ignore bootstrap and font-awesome folders
 bootstrap/
-
 assets/fontawesome/
-
+#ignore try file
 try.php
