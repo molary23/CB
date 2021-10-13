@@ -1,7 +1,7 @@
 <?php
 //error_reporting(0);
-define('DSN', 'mysql:host=localhost;dbname=carsBuyer;charset=utf8');
-define('USERNAME', 'root');
+define('DSN', 'mysql:host=localhost;dbname=XXXXXX;charset=utf8');
+define('USERNAME', 'XXXXXXX');
 define('PASSWORD', '');
 try {
 $connect = new PDO(DSN,USERNAME,PASSWORD);
