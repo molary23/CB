@@ -1,8 +1,8 @@
 #Ignore Database Connection
-Backend/connect/
+/connect/
 #Ignore Bootstrap
-Backend/bootstrap/
+/bootstrap/
 #Ignore Font-Awesome
-Backend/assets/fontawesome/
+/assets/fontawesome/
 #Ignore trying file
-Backend/try.php
+/try.php
