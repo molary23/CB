@@ -1,4 +1,4 @@
-#ignore the connection to Database file
+#Ignore the connection to Database file
 connect/
 #ignore bootstrap and font-awesome folders
 bootstrap/
