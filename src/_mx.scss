@@ -1,0 +1,24 @@
+@mixin starter {
+    padding-top: $normPad;
+    min-height: $minHeight;
+    h1{
+        margin-bottom: $normPad;
+    }
+}
+
+@mixin placehold {
+    color: $foreColor !important; opacity:1;
+}
+
+@mixin mediaQuery($par...){
+    @if length($par) == 1 {
+       @media screen and (min-width:nth($par, 1)){
+          @content; 
+       } 
+    }
+    @if length($par) > 1{
+        @media screen and (max-width:nth($par, 1)) and (min-width: nth($par, 2)) {
+            @content;
+        }
+    }
+}

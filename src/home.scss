@@ -1,0 +1,492 @@
+@import 'variable';
+@import 'constant';
+@import 'mx';
+
+html {font-family: 'Noto Sans JP', sans-serif; -moz-osx-font-smoothing: grayscale; -moz-font-feature-settings: "liga", "kern"; font-feature-settings: "liga", "kern"; text-rendering: optimizelegibility; -webkit-font-smoothing: antialiased; scroll-behavior: smooth;}
+a {
+    text-decoration: none !important;
+}
+
+// Top Navbar
+.sticky-top {
+    transition: all 1.5s;
+}
+.focusNav {
+    font-weight: 900;
+    color: $bgForeColor !important;
+}
+.topNavBar{
+    background: transparent;
+    a{
+        color: $foreColor !important;
+    }
+}
+.navAffix {
+    background: $foreColor;
+    a{
+        color: $bgForeColor !important;
+    }
+}
+// carousel
+.topCarousel {
+    margin-top: -100px;
+    img{
+    width: 100%;
+    height: auto;
+    @include mediaQuery(1200px){
+        height: 800px;
+    }
+    }
+.carousel-item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($bgForeColor, 0.8);
+}
+
+.carousel-control-prev, .carousel-control-next {
+	color: $foreColor;
+	width: 50px !important;
+	height: 50px !important;
+	border: 1px solid $foreColor;
+	text-align: center;
+	line-height: 50px;
+    font-size: 10px;
+    top: 50% !important;
+}
+
+.carousel-control-prev{
+    left: 5% !important;
+}
+
+.carousel-control-next{
+    right: 5% !important;
+}
+.carousel-item .carousel-caption {
+    padding: 40px;
+    color: $foreColor;
+    text-align: left;
+    top:30%;
+  }
+
+  .carousel-caption h1 {
+      font-size: 2.5vw;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.5vw;
+}
+.carousel-caption .btn {
+    margin-top: 20px !important;
+} 
+}
+
+
+//about section
+
+.aboutService {
+    background-image : url('/fljc/../service-bg.jpg'); 
+    min-height: $minHeight;   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .serviceAbout {
+        @include starter;
+        background: rgba($bgForeColor, 0.8);
+        color: aliceblue;
+    }   
+}
+
+
+// our company
+.aboutCompany {
+    margin: 0px 0px 50px 0px;
+    @include starter;
+    background: $foreColor;
+.carCompany {
+    width: 100%;
+    height: auto;
+}
+.companyCar {
+    animation-name: moveCar;
+    animation-duration: 2s;
+}
+.companyInfo{
+    text-align: justify;
+    text-justify: inter-word;
+}
+}
+
+@keyframes moveCar {
+    0%   {margin-left: -750px;}
+    100% {margin-left: 0px; }
+  }
+  
+
+  // how it works
+
+
+.howWorks {
+    min-height: 500px;
+    background: #1a5b92;
+    padding: 50px 0px;
+
+h1{
+    color: $foreColor;
+}
+.worksInfo{
+    margin-top: 70px;
+}
+.numberWorks {
+    font-size: 100px;
+    margin-top: -100px;
+    margin-bottom: -20px;
+    font-family: fangsong;
+    text-align: left;
+    margin-left: -20px;
+    background: #ebebeb;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(.1px 1px .3px #3b3b3b);
+    transition: ease 1000ms;
+}
+
+.numberWorksMove{
+    margin-left: 110px;
+    @include mediaQuery(1023px, 768px){
+        margin-left: 190px;
+    }
+    @include mediaQuery(1199px, 1024px){
+        margin-left: 70px;
+    }
+}
+
+.card {
+    text-align: left;
+    border-radius: 5px !important; 
+}
+.howWorkList {
+    margin-top: 80px;
+    @include mediaQuery(1200px){
+        margin-top: 0px;
+    }
+}
+}
+
+//Reach
+.reachSection {
+    min-height: 300px;
+    background: linear-gradient(120deg, #0466c8 50%, #2176ff 50%);
+    padding: 80px 0px;
+    color: $foreColor;
+}
+
+// FAQ
+.faqSection {
+    min-height: $minHeight;
+    background: #2C7DA0;
+    padding: $normPad 0px;
+    color: $foreColor;
+
+     .card-header, .card-body{
+        color: rgb(20, 20, 20);
+    }
+    .faqContainer {
+        text-align: left;
+        margin-top: 50px;
+    
+         .card {
+            margin-bottom: 20px;
+        }
+         a {
+            color: rgb(20, 20, 20);
+        }
+    }
+}
+
+
+
+
+// Testimonials
+.testimonials {
+    min-height: 300px;
+    padding: $normPad 0px;
+    background-color: #A9D6E5;
+
+    .testimony {
+        min-height: 300px;
+        @include mediaQuery(1200px){
+            width: 420px;
+        }
+    }
+    
+    .testify{
+        margin-top: 100px;
+        .card{
+            text-align: justify;
+            text-justify: inter-word;
+            @include mediaQuery(1200px){
+            padding-right: 15px;
+            }
+        }
+         .card span {
+            float: right;
+        }
+    }
+    
+
+    blockquote {
+        border:none;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        margin-bottom:-30px !important;
+        quotes: "\201C""\201D";
+        text-align: center;
+
+        &:before { 
+            content: open-quote;
+            font-weight: bold;
+            font-size:80px;
+            color:#b1b1b1;
+            } 
+        }
+        
+        
+}
+
+.testify div:nth-child(even) .testimony {
+    margin-top: -50px;
+    background-color: #2FCCFF;
+    z-index: 1;
+    color: $foreColor;
+    padding: 0px;
+    @include mediaQuery(1200px){
+        width: 550px;
+        margin-left: -65px;
+    }
+    blockquote:before{
+        color: $foreColor;
+    }
+}
+
+.testify div:nth-child(3) .testimony {
+    @include mediaQuery(1200px){
+padding-left: 15px;
+padding-right: 0px;
+    }
+}
+
+    
+
+// quotation
+.getQuotation {
+    padding: $normPad 0px;
+    min-height: $minHeight;
+    background: #e2eafc;
+
+    .quotationForm {
+        margin-top: 50px;
+    }
+}
+
+// contact us
+.contactUs {
+    min-height: $minHeight;
+    padding: $normPad 0px;
+    background:  #013A63;
+    color: $foreColor;
+
+    textarea,  input {
+        color: $foreColor !important;
+        &:focus {box-shadow: none !important; border-bottom: 1px solid $foreColor !important;}
+        &::-webkit-input-placeholder {
+          @include placehold;
+       }
+       &:-moz-placeholder  {
+        @include placehold;
+     }
+      &::-moz-placeholder{
+        @include placehold;
+     }
+      &:-ms-input-placeholder {
+        @include placehold;
+     }
+    }
+.contactDetails{
+    text-align: left;
+    button{
+        float: left;
+    }
+}
+.contactAddress div {
+    margin: 10px 0px;
+    a {text-decoration: none; color: $foreColor;}
+}
+}
+
+//footer 
+.footer {
+    padding-top: 10px;
+    background: #012A4A;
+    height: 50px;
+    color: $foreColor;
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+
+.gallery {
+    min-height: ($minHeight + 100);
+    background-color: #014F86;
+    padding: $normPad 0px;
+    color: $foreColor;
+
+    .galleryPhotos {
+        margin-top: 50px;
+    }
+    
+    .galleryPhotos img {
+        width: 600px;
+        height: 400px;
+    }
+    
+    
+    .galleryImage {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+
+  .imageContainer {
+    position: relative;
+    margin-bottom: 25px;
+    
+    &:hover .overlay {
+        width: 100%;
+      }
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2FCCFF;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  .imageDescription {
+    color: $foreColor;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-align: left;
+  }
+}
+
+// Offer
+.offer {
+button {
+    margin: 0px 5px;
+}    
+.card.card-plain {
+    background: transparent;
+    box-shadow: none;
+}
+.card .card-header {
+    border-radius: 3px;
+    padding: 1rem 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border: 0;
+    background: linear-gradient(60deg,#eee,#bdbdbd);
+}
+
+.card-plain .card-header:not(.card-avatar) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card .card-body{
+    padding: 15px 30px;
+}
+
+.card .card-header-primary {
+    background: linear-gradient(60deg,#305da5,#164ea7);
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(41, 105, 243, 0.6);
+}
+
+.card-nav-tabs .card-header {
+    margin-top: 50px !important;
+}
+
+.card .card-header .nav-pills {
+    padding: 0;
+}
+.nav-pills .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-pills .nav-item button.nav-link.active {
+    background-color: hsla(0,0%,100%,.2);
+    transition: background-color .3s .2s;
+}
+
+.nav-pills .nav-item .nav-link{
+    border: 0!important;
+    color: $foreColor!important;
+    font-weight: 500;
+}
+
+.nav-pills .nav-item .nav-link {
+    color: $foreColor;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: transparent;
+    transition: background-color .3s 0s;
+}
+.nav-link{
+    display: block;
+}
+
+.nav .nav-item {
+    position: relative;
+}
+.form-check-inline {
+    float: left;
+}
+
+.form-check-label {
+    padding-left: 5px;
+}
+}
+
+.modal {
+    color: #363636;
+    background: rgba(0,0,0,0.7);
+}
+

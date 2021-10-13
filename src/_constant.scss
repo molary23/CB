@@ -1,0 +1,66 @@
+.card {
+    box-shadow: 1px 2px 5px 0px rgba(155, 155, 155, 0.5);
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+button {
+    float: left;
+    transition: all 0.4s ease;
+    margin-bottom: 10px !important;
+}
+
+.submitButtonNormal.btn.btn-primary {
+    background: transparent;
+    border: 2px solid #2FCCFF;
+    width: 200px;
+    color: #2FCCFF;
+    border-radius: 0px !important;
+    &:hover{
+        background: #2FCCFF;
+        color: $foreColor;
+    }
+}
+
+.submitButtonNormal.btn.btn-danger {
+    background: transparent;
+    border: 2px solid $dangerColor;
+    width: 200px;
+    color: $dangerColor;
+    border-radius: 0px !important;
+    &:hover{
+        background: $dangerColor;
+        color: $foreColor;
+    }
+}
+.submitButtonOutline, a.callUs.btn.btn-link {
+    background: #2FCCFF;
+    border: 2px solid #2FCCFF;
+    width: 200px;
+    color: $foreColor;
+    border-radius: 0px !important;
+
+    &:hover{
+        background: transparent;
+        color: #2FCCFF;
+    }
+}
+a.callUs.btn.btn-link{
+    font-weight: 900;
+}
+
+input, select, textarea {
+    margin: 20px 0px !important;
+    border-radius: 0px !important;
+    border-top: 0px !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-bottom: 1px solid $foreColor;
+    background: transparent !important;
+    float: left;
+}
+
+.errorDisplay {
+    border-bottom: 1px solid $dangerColor !important;
+}
+.loadingError {text-align: center;}
