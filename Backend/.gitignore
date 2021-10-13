@@ -1,3 +1,5 @@
+# ignore connect folder
+connect/
 # ignore bootstrap and font-awesome folders
 /bootstrap/
 /assets/fontawesome/
