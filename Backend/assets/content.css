@@ -1,0 +1,620 @@
+html {
+    scroll-behavior: smooth;
+    display: none;
+}
+
+body {font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -moz-osx-font-smoothing: grayscale; -moz-font-feature-settings: "liga", "kern"; font-feature-settings: "liga", "kern"; text-rendering: optimizelegibility; -webkit-font-smoothing: antialiased;}
+.coyName {margin-right: 150px;}
+
+/* Login Page */
+.loginPageBG {
+    height: 800px;
+    background : url('/fljc/assets/images/login-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.BGLoginPage {
+    height: 800px;
+    background: linear-gradient(to right, rgba(0,0,0, 0.8), rgba(34, 34, 34, 0.6));
+    padding-top: 2.5%;
+}
+
+.loginCover {
+    background: #fff;
+    width: 400px;
+    margin: 0% auto;
+    height: 520px;
+}
+.footCopy {color: #fff; text-align: center; margin-top: 3%;}
+
+.contentLoginForm {
+    width: 350px;
+    height: 350px;
+    margin: 20% auto 0% auto;
+    padding: 30% 2.5%;
+}
+
+.passSubmit {
+    width: 40% !important;
+    float: right;
+}
+
+
+
+.btnSubmit, .submitAD {
+    background: #17EFEF;
+    width: 100%;
+    color: #fff;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    border: 1px solid #17EFEF;
+    transition: 1s all;
+    font-weight: 600;
+}
+
+.btnSubmit:hover, .submitAD:hover {
+    background: #fff;
+    color: #17EFEF;
+}
+
+.submitAD {
+    height: 40px;
+}
+
+.needHelp {
+    text-align: center;
+    cursor: pointer;
+}
+.loginCover{
+    border-radius: 0px;
+}
+
+.loginLogo img{
+    width: 30%;
+    height: auto;
+    margin: 10px 0px 0px 10px;
+}
+
+.contentLoginForm{
+    background: transparent;
+}
+
+.forgotPassword input {
+    border-radius: 0px;
+}
+#closePass, .loader, .fpError, .loading {
+    display: none;
+}
+
+.viewPass i{
+    cursor: pointer;
+}
+.loginErrorDisplay {
+    color: tomato;
+    font-style: italic;
+}
+
+/* Home Nav */
+
+.sidebar a,  .sidebar .off{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #111;
+    display: block;
+    cursor: pointer;
+}
+
+li.off i {
+    padding-left: 5px;
+}
+
+.sidebar li span {
+    margin-left: 5px;
+}
+
+.sidebar li, .theme, .sidebar p{
+    padding-left: 5px;
+}
+.sidebar li:hover {
+    background: #1e5f74;
+}
+.sidebar li:hover a,  .sidebar li.off:hover, .sidebar li:hover .themeDetails{
+    color: #fff;
+}
+.theme li{
+    text-align: center;
+    padding: 5px 0px !important;
+}
+.sidebarLG {
+    width: 250px;
+}
+.sideBarSmall {
+    width: 80px;
+}
+
+.sidebar{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 50px;
+    box-shadow: 1px 2px 5px 0px rgba(155, 155, 155, 0.5);
+}
+.sidebar ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.logoImage {
+    margin-right: -120px;
+ }
+
+ .userImage img {
+     width: 30px;
+     height: 30px;
+     border-radius: 30px;
+     border: 1px solid #ccc;
+ }
+
+/* Footer */
+
+.footer {
+    height: 60px;
+    background: #00b359;
+    margin-bottom: 0 !important;
+}
+
+.copy {
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+
+/* Admin Index */
+.cardIcon {
+    margin-top: 30%;
+}
+.cardIcon i {
+    width: 65px;
+    height: 65px;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+#content .card {
+    box-shadow: 1px 0.5px 1px 0px rgba(155, 155, 155, 0.5);
+}
+.homeContent .card{
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.homeContent a {
+    text-decoration: none;
+    color: #151515;
+  }
+  
+  .homeContent h4{
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  .quotationCard .cardIcon i {
+    color: #67B8F7;
+    background: #F0F8FE;
+  }
+  
+  .transactionsCard .cardIcon i {
+    color: #7B53D7;
+    background: #EFE8FC;
+  }
+  
+  .clientsCard .cardIcon i {
+    color: #EAC70D;
+    background: #FDF7D5;
+  }
+  .usersCard .cardIcon i {
+    color: #E8587D;
+    background: #F8E7EB;
+  }
+  .testimonialsCard .cardIcon i {
+    color: #6ED3A5;
+    background: #E1F8ED;
+  }
+  .galleryCard .cardIcon i {
+    color: #EF8C5C;
+    background: #F5EAE4;
+  }
+
+  .homeContent .card-title {
+      margin-bottom: 0px;
+  }
+
+.alert .btn {
+  font-weight: 600;
+  color: #fff;
+}
+
+.tip .btn {
+  margin-right: 5px;
+}
+.tip p {
+  text-align: justify; text-justify: inter-word;
+}
+
+/* General */
+.holderCard, .holdCard {width:100%; min-height: 650px; padding: 20px; background: #fff; box-shadow: 0px 1px 2px rgba(0,0,0,0.6); border-radius: 10px;}
+.holderCard h1 {margin-bottom: 30px;}
+ .searchInput {border-radius: 20px;}
+ .searchTop {margin-bottom: 10px;}
+ 
+ input, button, select, textarea {
+    margin-bottom: 10px;
+}
+
+ .holderCard
+{
+    counter-reset: Serial;           /* Set the Serial counter to 0 */
+}
+
+.holderCard tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
+
+.downloadPDF {
+    background: #F40F02;
+    color: #fff;
+    border-radius: 0px;
+}
+.downloadCSV {
+    background: #1D6F42;
+    color: #fff;
+}
+
+.searchTableBody {
+    display: none;
+}
+.searchedChar {
+    font-weight: 900;
+}
+.capName {
+    text-transform: capitalize;
+}
+.viewMore {
+    text-align: center;
+}
+.getMoreBTN {
+    display: none;
+    background: transparent;
+}
+span.themeName {
+    margin-left: 0px !important;
+}
+.addNewBTN {
+    float: right;
+}
+.scrollUp {
+    text-align: right;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 70px;
+    right: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    animation: scroller 1s infinite;
+    -webkit-animation: scroller 1s infinite;
+    display: none;
+}
+.downloadCSV {
+    border-radius: 0px;
+    margin: inherit 0px;
+}
+
+/* Testimonials */
+
+.cardSection .card {
+    border-radius: 10px;
+}
+
+.cardAction {
+    text-align: right;
+}
+.card-header p {
+margin-bottom: 2.5px;
+}
+.cardAction i {
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.cardAction i:first-child {
+    color: rgb(47, 157, 247);
+}
+.cardAction i:nth-child(2) {
+    color: tomato;
+}
+#showIcons {
+     margin-right: 10px;
+     cursor: pointer;
+ }
+ .cardSection .card {
+    margin-bottom: 20px;
+}
+.testChannel {
+    text-transform: capitalize;
+}
+
+ .contentSM {
+    margin-left: 220px;
+}
+.contentLG {
+    margin-left: 80px;
+}
+#content {
+    background: #F4F4F9;
+    min-height: 650px;
+    padding: 50px 20px 20px 50px;
+}
+
+.themeDetails {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.themeIconOnly {
+    margin-left: 10px;
+}
+#showAllLink {
+    display: none;
+}
+.badge {
+    font-size: 60%; 
+}
+time {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        width: 80px;
+    }
+    #content {
+        margin-left: 80px;
+        padding: 20px 0px;
+    }
+    .dropIcon {
+        display: none;
+    }
+    .themeDetails {
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+
+/*User*/
+.tableSection img {
+    width: 100px;
+    height: auto;
+}
+.photoHolder {
+   text-align: center;
+}
+.action button {
+    margin-right: 5px;
+}
+
+/*Add Quote*/
+.ifNo {
+    display: none;
+    margin-bottom: 20px;
+}
+.addQuoteContent {
+    margin-top: 50px;
+}
+.addQuoteContent select {
+    margin-bottom: 20px;
+}
+.addQuoteContent button {
+    margin-top: 20px;
+}
+.errorClass {
+  border-color: tomato;
+}
+
+/* Cars*/
+.action button {
+    margin-right: 5px;
+}
+.addError {
+    color: tomato;
+}
+
+/* gallery */
+.galleryContent .modal {
+    padding: 0 10px;
+  }
+  .galleryContent .modal .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .galleryContent .modal .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .galleryContent .modal .modal-body {
+    overflow-y: auto;
+  }
+  
+  .galleryContent .modal-body {
+    margin-bottom: 40px;
+  }
+  .galleryContent .modal img {
+    max-width: 100%; /* This rule is very important, please do not ignore this! */
+  }
+  
+  #canvas {
+    height: 600px;
+    width: 600px;
+    background-color: #ffffff;
+    cursor: default;
+  }
+  
+  
+  .editImageBTN {
+    margin: 20px 0px;
+    display: none;
+  }
+  
+  .DragAndDrop {height: 200px; background: violet; padding-top: 20px;}
+  #goingBack {margin-bottom: 100px; border:1px #4286f4 solid; color: #4286f4;}
+  #selectedUpload {background: red; margin-top: 10px; width: 100%;}
+  
+  #drop-zone {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    border: 2px dashed rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    font-family: Arial;
+    text-align: center;
+    position: relative;
+    line-height: 180px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .3);
+    margin: 0 0 0 2vw;
+  }
+  
+  #drop-zone input {
+    /*Important*/
+    position: absolute;
+    /*Important*/
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    opacity:0;
+    /*Important This is only comment out for demonstration purpeses.
+          opacity:0; */
+  }
+  
+  
+  /*Important*/
+  
+  #drop-zone.mouse-over {
+    border: 2px dashed rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .5);
+  }
+  
+  
+  /*If you dont want the button*/
+  
+  #clickHere {
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: 20px;
+    line-height: 26px;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: #3b85c3;
+  }
+  
+  #clickHere:hover {
+    background-color: #4499DD;
+  }
+  
+  .mouse-over {
+    background: #f2f2f2;
+  }
+
+  /*Quotation*/
+  .quoteContent label {
+    font-weight: 800;
+}
+.quoteContent p {
+    margin-bottom: 50px;
+}
+.quoteContent p:not(.em) {
+text-transform: capitalize;
+}
+.holdCard button {
+      margin-right: 5px;
+}
+.dealInfo, .carOwnerInfo  {
+      margin-top: 50px;
+}
+  
+.subBTN{
+    background: linear-gradient(60deg,#ab47bc,#7b1fa2);
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
+    color: #fff;
+    font-weight: 800;
+    width: 60%;
+    transition: all 3s;
+}
+
+.subBTN:hover {
+  background: #fff;
+  border: 1px solid #7b1fa2;
+  color: #7b1fa2;
+}
+#outbox {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#preview {
+    width: inherit;
+    height: auto;
+    border-radius: 5px;
+}
+.userIntro {
+    height: 60px;
+    background: #7b1fa2;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    margin: 20px 0px;
+}
+label {
+  font-weight: 900;
+}
+.userIntro h1 {
+  font-size: 30px;
+}

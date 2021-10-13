@@ -1,0 +1,15 @@
+* {background: #0f3460 !important; color: #fff !important; border-color: #fff !important;}
+.btn.disabled, .btn:disabled {border: none;}
+.quoteTool {background: #fff !important; color: #0f3460 !important;}
+.sticky-top {background: #0f3460 !important; border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;}
+.footer {border-top: 1px solid rgba(255, 255, 255, 0.25) !important;}
+.sidebar {border-right: 1px solid rgba(255, 255, 255, 0.25) !important;}
+.card {padding: 0.75vh 0.75vw;}
+.holderCard{border: 1px solid rgba(255, 255, 255, 0.25) !important;}
+
+.sidebar li:hover {
+    background: #fff;
+}
+.sidebar li:hover a,  .sidebar li.off:hover, .sidebar li:hover .themeDetails{
+    color: #1e5f74;
+}
